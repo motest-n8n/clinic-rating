@@ -312,7 +312,7 @@
     submitBtn.disabled = true;
     submitBtn.textContent = 'جاري الإرسال...';
 
-    const webhookUrl = `https://motestt.app.n8n.cloud/webhook/ratingmo?patient_id=${encodeURIComponent(patientId)}&patient_name=${encodeURIComponent(patientName)}&rating=${selectedRating}`;
+    const webhookUrl = `https://motestt.app.n8n.cloud/webhook-test/ratingmo?patient_id=${encodeURIComponent(patientId)}&patient_name=${encodeURIComponent(patientName)}&rating=${selectedRating}`;
 
     // Hidden iframe to bypass CORS
     const iframe = document.createElement('iframe');
