@@ -322,10 +322,7 @@
 
     const webhookUrl = `https://motestt.app.n8n.cloud/webhook/rating?patient_id=${encodeURIComponent(patientId)}&patient_name=${encodeURIComponent(patientName)}&rating=${selectedRating}`;
 
-    fetch(webhookUrl)
-      .then(() => showSuccess())
-      .catch(() => showSuccess()); // show success anyway UX-wise
-  }
+    window.location.href = webhookUrl;
 
   function showSuccess() {
     document.getElementById('formState').style.display = 'none';
